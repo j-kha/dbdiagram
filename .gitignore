@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.db
+*.db-wal
+*.db-shm
+.diagrams.db-litestream/
+dbdiagram-api
+.env
+.env.local

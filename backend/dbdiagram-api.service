@@ -1,0 +1,15 @@
+[Unit]
+Description=DB Diagram API
+After=network.target
+
+[Service]
+Type=simple
+User=CHANGEME
+WorkingDirectory=/path/to/dbdiagram/backend
+ExecStart=/path/to/dbdiagram/backend/dbdiagram-api
+Restart=always
+RestartSec=5
+Environment=PORT=8085
+
+[Install]
+WantedBy=multi-user.target
